@@ -1,0 +1,21 @@
+{
+  "name": "kongflower/crypt",
+  "description": "the mini app pay",
+  "keywords": ["crypt", "php7"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "gang",
+          "email": "1355528968@163.com"
+      }
+  ],
+  "require": {
+      "php": ">=7.0"
+  },
+  "autoload":{
+      "psr-4":{
+          "Kongflower\\": "src"
+      }
+  }
+}
