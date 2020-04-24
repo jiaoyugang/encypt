@@ -1,9 +1,12 @@
 <?php
+require dirname(__DIR__).'/vendor/autoload.php';
 
 use Kongflower\Crypt\Crypt;
 
-require dirname(__DIR__).'/vendor/autoload.php';
+//加密
+$encrypt = Crypt::getInstance()->crypt('test','ENDODE','skinrun');
+var_dump(urlencode($encrypt));
 
-$res = Crypt::getInstance()->crypt(111,'ENDODE','skinrun!');
-
-var_dump($res);
+//解密
+$dencrypt = Crypt::getInstance()->crypt(urldecode($encrypt),'DECODE','skinrun');
+var_dump($dencrypt);

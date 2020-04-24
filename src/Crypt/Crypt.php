@@ -21,12 +21,13 @@ final class Crypt{
     /**
      * 初始化对象
      */
-    public static function getInstance():object
+    public static function getInstance()
     {
         //判断$instance是否是Singleton的对象，不是则创建
         if (!self::$instance instanceof self) {
             self::$instance = new self();
         }
+        var_dump(self::$instance);exit;
         return self::$instance;
     }
 
@@ -49,6 +50,7 @@ final class Crypt{
          */
         $key = md5($key ? $key : $this->salt);
         $key_length = strlen($key);
+        
         /**
          * 如果解密，先对密文解码
          * 如果加密,将密码算子和待加密字符串进行md5运算后取前8位
