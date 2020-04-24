@@ -27,7 +27,6 @@ final class Crypt{
         if (!self::$instance instanceof self) {
             self::$instance = new self();
         }
-        var_dump(self::$instance);exit;
         return self::$instance;
     }
 
