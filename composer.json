@@ -1,6 +1,6 @@
 {
   "name": "kongflower/crypt",
-  "description": "the mini app pay",
+  "description": "encry params",
   "keywords": ["crypt", "php7"],
   "type": "library",
   "license": "MIT",
